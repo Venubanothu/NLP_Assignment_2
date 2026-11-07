@@ -1,0 +1,59 @@
+{
+  "seed": 42,
+  "tag_names": [
+    "ADJ",
+    "ADP",
+    "ADV",
+    "AUX",
+    "CCONJ",
+    "DET",
+    "INTJ",
+    "NOUN",
+    "NUM",
+    "PART",
+    "PRON",
+    "PROPN",
+    "PUNCT",
+    "SCONJ",
+    "SYM",
+    "VERB",
+    "X"
+  ],
+  "best_temperature": 1.25,
+  "task1_test": [
+    0.9191838686538615,
+    0.9321040840944339,
+    0.7598299681190224
+  ],
+  "task3_test": [
+    0.9372758428309556,
+    0.9481733586076168,
+    0.8028692879914984
+  ],
+  "task3_dev_accuracy": 0.936814060760299,
+  "task3_test_accuracy": 0.9372758428309556,
+  "task2_checkpoint_found": true,
+  "comparison": {
+    "Task 1: HMM counts": {
+      "overall": 0.9191838686538615,
+      "known": 0.9321040840944339,
+      "unknown": 0.7598299681190224
+    },
+    "Task 2: BiLSTM-CRF": {
+      "overall": 0.9572407746871762,
+      "known": 0.9650180940892642,
+      "unknown": 0.861317747077577
+    },
+    "Task 3: Neural-emission HMM": {
+      "overall": 0.9372758428309556,
+      "known": 0.9481733586076168,
+      "unknown": 0.8028692879914984
+    }
+  },
+  "ablation": {
+    "hybrid_tuned_with_prior": 0.9372758428309556,
+    "hybrid_T1_with_prior": 0.9469594325336734,
+    "hybrid_tuned_without_prior": 0.9436518689726627,
+    "neural_softmax_argmax": 0.9559257192954491
+  }
+}
